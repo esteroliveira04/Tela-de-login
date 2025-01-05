@@ -5,7 +5,7 @@
     src: url(../fontes/hawthorne_vintage/Hawthorne\ Vintage.otf);
 }
 
-@keyframes slide-in {
+/*@keyframes slide-in {
     from {
       transform: translateX(100%);
       opacity: 1;
@@ -14,7 +14,7 @@
       transform: translateX(0%);
       opacity: 1;
     }
-  }
+  }*/
 
   @keyframes slide-in-imagem {
     from {
@@ -22,8 +22,8 @@
       opacity: 1;
     }
     to {
-      transform: translateX(0%);
-      opacity: 1;
+      transform: translateX(76.5%);
+      opacity: .3;
     }
   }
 
@@ -101,27 +101,34 @@ main{
     clip-path: inset(0 0 0 0);
 }
 
+.bem-vindo{
+    padding-left: 200px;
+}
+
 .imagem{
     background-image: url(../imagens/planta.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 90vh;
-    width: 45%;
+    width: 65%;
     box-shadow: 0px 0px 100px 0px #5ea71a39;
-    animation: slide-in-imagem 1.5s ease-out;
+    animation: slide-in-imagem 2s ease-out;
+    animation-fill-mode: forwards;
 }
 
 .espacologin{
-    width: 55%;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-right: 300px;
 }
 
 .login{
-    background-color: var(--cor1);
+    background: transparent;
+    /*background-color: var(--cor1);*/
     border: 3px solid var(--cor2);
     height: 500px;
     width: 450px;
