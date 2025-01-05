@@ -10,6 +10,7 @@
     --cor2:#36373B;
     --cor3:#d8cfbc;
     --cor4:#fffbf4;
+    --cor5:#5DA71A;
 }
 
 *{
@@ -20,6 +21,51 @@
 
 body{
     height: 100vh;
+    width: 100vw;
+    /*background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+}
+
+header{
+height: 10vh;
+background-color: var(--cor1);
+border: 1px solid var(--cor2);
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: var(--cor4);
+}
+
+header img{
+    height: 50px;
+    padding-left: 50px;
+}
+
+header a{
+    color: var(--cor3);
+}
+
+.logo{
+display: flex;
+align-items: center;
+font-family: hawthorne;
+font-size: 30px;
+color: var(--cor3);
+}
+
+.logo p{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.criar-conta{
+    padding-right: 50px;
+}
+
+main{
+    height: 90vh;
     width: 100vw;
     background-color: var(--cor1);
     display: flex;
@@ -32,7 +78,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
+    height: 90vh;
     width: 35%;
 }
 
@@ -45,6 +91,7 @@ body{
 
 .login{
     background-color: var(--cor1);
+    border: 3px solid var(--cor2);
     height: 500px;
     width: 450px;
     display: flex;
@@ -55,7 +102,7 @@ body{
 }
 
 h1{
-    color: var(--cor4);
+    color: var(--cor3);
     font-size: 4em;
     text-align: left;
     width: 300px;
@@ -65,7 +112,8 @@ h1{
 .caixas{
     height: 50px;
     width: 300px;
-    margin: 10px;
+    margin: 1px;
+    margin-bottom: 3px;
     border-radius: 5px;
     border: 0px;
     display: flex;
@@ -89,8 +137,13 @@ label{
     font-family: hawthorne;
 }
 
-.labelesqueci{
+.labelesqueci, .labellembrar{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--cor4);
+}
+
+.labelesqueci a{
+    color: var(--cor3);
 }
