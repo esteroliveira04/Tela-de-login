@@ -5,6 +5,28 @@
     src: url(../fontes/hawthorne_vintage/Hawthorne\ Vintage.otf);
 }
 
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-imagem {
+    from {
+      transform: translateX(-100%);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
 :root{
     --cor1:#262729;
     --cor2:#36373B;
@@ -17,11 +39,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body{
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
     /*background-color: var(--cor1);
     display: flex;
     justify-content: space-between;
@@ -29,13 +53,14 @@ body{
 }
 
 header{
-height: 10vh;
-background-color: var(--cor1);
-border: 1px solid var(--cor2);
-display: flex;
-align-items: center;
-justify-content: space-between;
-color: var(--cor4);
+    height: 10vh;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor4);
+    clip-path: inset(0 0 0 0);
 }
 
 header img{
@@ -48,11 +73,11 @@ header a{
 }
 
 .logo{
-display: flex;
-align-items: center;
-font-family: hawthorne;
-font-size: 30px;
-color: var(--cor3);
+    display: flex;
+    align-items: center;
+    font-family: hawthorne;
+    font-size: 30px;
+    color: var(--cor3);
 }
 
 .logo p{
@@ -62,6 +87,7 @@ color: var(--cor3);
 
 .criar-conta{
     padding-right: 50px;
+    font-size: 18px;
 }
 
 main{
@@ -71,6 +97,8 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
 }
 
 .imagem{
@@ -79,14 +107,17 @@ main{
     background-repeat: no-repeat;
     background-position: center center;
     height: 90vh;
-    width: 35%;
+    width: 45%;
+    box-shadow: 0px 0px 100px 0px #5ea71a39;
+    animation: slide-in-imagem 1.5s ease-out;
 }
 
 .espacologin{
-    width: 65%;
+    width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .login{
@@ -99,6 +130,10 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    /*animation: slide-in 1.5s ease-out forwards;
+    transform: translateX(-100%);
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);*/
 }
 
 h1{
@@ -109,20 +144,31 @@ h1{
     font-family: hawthorne;
 }
 
+.labelcaixas{
+    margin-left: -10px;
+    color: var(--cor3);
+    font-size: 16px;
+}
+
 .caixas{
     height: 50px;
     width: 300px;
     margin: 1px;
     margin-bottom: 3px;
-    border-radius: 5px;
     border: 0px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor2);
+    background-color: transparent;
+    border-bottom: 3px solid #36373B;
     text-align: center;
     color: #fffbf4;
+}
+
+input:active, input:focus{
+    outline: none;
+    border: 1px solid var(--cor3);
 }
 
 button{
@@ -131,10 +177,20 @@ button{
     font-weight: bold;
 }
 
+.botaoentrar{
+    border: 3px solid var(--cor2);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.botaoentrar:hover{
+    background-color:#202123;
+}
+
 label{
     color: var(--cor4);
     padding: 10px;
-    font-family: hawthorne;
+    /*font-family: hawthorne;*/
 }
 
 .labelesqueci, .labellembrar{
@@ -142,8 +198,31 @@ label{
     justify-content: center;
     align-items: center;
     color: var(--cor4);
+    font-size: 18px;
 }
 
 .labelesqueci a{
     color: var(--cor3);
+}
+
+footer{
+    background-color: var(--cor1);
+    border: 1px solid var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor2);
+    clip-path: inset(0 0 0 0);
+    text-align: center;
+    padding: 30px;
+    color: var(--cor4);
+    font-size: 16px;
+}
+
+footer a{
+    color: var(--cor3);
+}
+
+a:hover{
+    text-decoration: none;
 }
