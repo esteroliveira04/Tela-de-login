@@ -78,6 +78,7 @@ header a{
     font-family: hawthorne;
     font-size: 30px;
     color: var(--cor3);
+    padding-left: 50px;
 }
 
 .logo p{
