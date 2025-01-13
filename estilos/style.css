@@ -101,9 +101,6 @@ main{
     clip-path: inset(0 0 0 0);
 }
 
-.bem-vindo{
-    padding-left: 200px;
-}
 
 .imagem{
     background-image: url(../imagens/planta.jpg);
@@ -113,8 +110,10 @@ main{
     height: 90vh;
     width: 65%;
     box-shadow: 0px 0px 100px 0px #5ea71a39;
-    animation: slide-in-imagem 2s ease-out;
-    animation-fill-mode: forwards;
+    /*animation: slide-in-imagem 2s ease-out;
+    animation-fill-mode: forwards;*/
+    transform: translateX(76.5%);
+    opacity: 40%;
 }
 
 .espacologin{
@@ -176,6 +175,16 @@ h1{
 input:active, input:focus{
     outline: none;
     border: 1px solid var(--cor3);
+    background-color: transparent;
+}
+
+.material-symbols-outlined {
+    color: #d8cfbc;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 button{
@@ -188,10 +197,12 @@ button{
     border: 3px solid var(--cor2);
     margin-bottom: 20px;
     margin-top: 20px;
+    background-color:#202123;
 }
 
 .botaoentrar:hover{
-    background-color:#202123;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 label{
