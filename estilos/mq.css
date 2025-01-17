@@ -12,7 +12,7 @@
     }
     
     .espacologin{
-        background-image: url(/imagens/pranta3.jpg);
+        background-image: url('../imagens/planta3.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -49,7 +49,7 @@
     }
     
     .espacologin{
-        background-image: url(/imagens/pranta3.jpg);
+        background-image: url('../imagens/planta3.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
