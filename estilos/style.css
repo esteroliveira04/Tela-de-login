@@ -5,28 +5,6 @@
     src: url(../fontes/hawthorne_vintage/Hawthorne\ Vintage.otf);
 }
 
-/*@keyframes slide-in {
-    from {
-      transform: translateX(100%);
-      opacity: 1;
-    }
-    to {
-      transform: translateX(0%);
-      opacity: 1;
-    }
-  }*/
-
-  @keyframes slide-in-imagem {
-    from {
-      transform: translateX(-100%);
-      opacity: 1;
-    }
-    to {
-      transform: translateX(76.5%);
-      opacity: .3;
-    }
-  }
-
 :root{
     --cor1:#262729;
     --cor2:#36373B;
@@ -42,14 +20,9 @@
     overflow: hidden;
 }
 
-body{
+html, body{
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    /*background-color: var(--cor1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;*/
 }
 
 header{
@@ -61,15 +34,6 @@ header{
     justify-content: space-between;
     color: var(--cor4);
     clip-path: inset(0 0 0 0);
-}
-
-header img{
-    height: 50px;
-    padding-left: 50px;
-}
-
-header a{
-    color: var(--cor3);
 }
 
 .logo{
@@ -86,63 +50,40 @@ header a{
     margin-top: 10px;
 }
 
-.criar-conta{
-    padding-right: 50px;
-    font-size: 18px;
-}
-
 main{
     height: 90vh;
     width: 100vw;
     background-color: var(--cor1);
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    overflow: hidden;
-    clip-path: inset(0 0 0 0);
-}
-
-
-.imagem{
-    background-image: url(../imagens/planta.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 90vh;
-    width: 65%;
-    box-shadow: 0px 0px 100px 0px #5ea71a39;
-    /*animation: slide-in-imagem 2s ease-out;
-    animation-fill-mode: forwards;*/
-    transform: translateX(76.5%);
-    opacity: 40%;
 }
 
 .espacologin{
-    width: 35%;
+    background-image: url(/imagens/pranta3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-right: 300px;
+    margin-right: 200px;
+    height: 90vh;
 }
 
 .login{
     background: transparent;
-    /*background-color: var(--cor1);*/
     border: 3px solid var(--cor2);
     height: 500px;
-    width: 450px;
+    width: 50%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    /*animation: slide-in 1.5s ease-out forwards;
-    transform: translateX(-100%);
-    overflow: hidden;
-    clip-path: inset(0 0 0 0);*/
+    transition: all 0.3s ease;
 }
-
 h1{
     color: var(--cor3);
     font-size: 4em;

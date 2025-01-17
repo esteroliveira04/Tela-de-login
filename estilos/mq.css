@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/*telas médias*/
+@media screen and (min-width: 751px) and (max-width: 1163px){
+    main{
+        height: 90vh;
+        width: 100vw;
+        background-color: var(--cor1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .espacologin{
+        background-image: url(/imagens/pranta3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        margin-right: 0px;
+    }
+    
+    .login{
+        background: transparent;
+        border: 3px solid var(--cor2);
+        height: 500px;
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+}
+
+/*telas pequenas*/
+@media screen and (max-width: 751px){
+    main{
+        height: 90vh;
+        width: 100vw;
+        background-color: var(--cor1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .espacologin{
+        background-image: url(/imagens/pranta3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        margin-right: 0px;
+    }
+    
+    .login{
+        background: transparent;
+        border: 3px solid var(--cor2);
+        height: 500px;
+        width: 350px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+}
